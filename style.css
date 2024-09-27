@@ -89,8 +89,10 @@ body{
 }
 .message-error{
     position: relative;
-    /* display: none; */
+    display: none;
+    justify-content: center;
     margin: 2px 0 10px 0;
+    width: 100%;
     font-size: 10px;
     line-height: 20px;
     font-weight: 300;
@@ -181,6 +183,15 @@ body{
     text-decoration: none;
     color: var(--Very-Dark-Blue);
 }
+.error-visible{
+    display: flex;
+}
+.email-error{
+    border-color: var(--Light-Red);
+}
+.email-error:active, .email-error:focus-visible, .email-error:focus{
+    outline: 2px solid var(--Light-Red) ;
+}
 @media(min-width: 768px){
     .header{
         padding: 80px 0 40px 0;
@@ -225,6 +236,7 @@ body{
         position: absolute;
         top: 62px;
         margin: 0;
+        justify-content: start;
         padding-left: 30px;
         font-size: 12px;
         letter-spacing: 0.15px;
