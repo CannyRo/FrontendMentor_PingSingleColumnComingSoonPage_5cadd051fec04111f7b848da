@@ -54,7 +54,7 @@ function app() {
   //// => Sequence of isEmpty(), isEmail(), cleanError()
   function controlAndShowError(node) {
     if (isEmpty(node)) {
-      message = "Email Address cannot be empty";
+      message = "Whoops! It looks like you forgot to add your email";
       showError(message);
       countError++;
       return;
